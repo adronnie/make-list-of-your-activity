@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <p>Make your own list of your activities.</p>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle"> Dark Mode</button>
+
+        <!-- Stats Dashboard -->
+        <div class="stats">
+            <p>Total Tasks: <span id="total-tasks">0</span></p>
+            <p>Completed Tasks: <span id="completed-tasks">0</span></p>
+            <p>Overdue Tasks: <span id="overdue-tasks">0</span></p>
+        </div>
+
+        <!-- Task Filter -->
+        <input type="text" id="task-search" placeholder="Search tasks">
+
+        <!-- Add Task Form -->
+        <form id="task-form">
+            <input type="text" id="task-name" placeholder="Task name" required>
+            <input type="date" id="task-due" required>
+            <select id="task-priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Task List -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

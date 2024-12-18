@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+p {
+text-align: center;
+text-decoration: underline;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+.high-priority {
+    background-color: #f8d7da;
+}
+
+.medium-priority {
+    background-color: #fff3cd;
+}
+
+.low-priority {
+    background-color: #d4edda;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+#task-form input, #task-form select {
+    display: inline-block;
+    width: auto;
+}
+
+.celebration {
+    color: #28a745;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button.undo.dark-mode {
+    background-color: #007bff;
+    color: white;
+}
+
+button.undo.dark-mode:hover {
+    background-color: #0056b3;
+}
+
+button.theme-toggle {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button.theme-toggle:hover {
+    background-color: #218838;
+}
+
+body.dark-mode button.theme-toggle {
+    background-color: #f8f9fa;
+    color: #121212;
+}
+
+body.dark-mode button.theme-toggle:hover {
+    background-color: #e2e6ea;
+}
